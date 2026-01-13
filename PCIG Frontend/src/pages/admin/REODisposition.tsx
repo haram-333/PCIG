@@ -1,4 +1,4 @@
-import { CSSProperties, useState } from 'react';
+import React, { CSSProperties, useState } from 'react';
 import {
   Search,
   Filter,
@@ -9,7 +9,6 @@ import {
   Edit,
   X,
   Image as ImageIcon,
-  ChevronRight,
   Eye
 } from 'lucide-react';
 import AdminNav from '../../components/admin/AdminNav';
