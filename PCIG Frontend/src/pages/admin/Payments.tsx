@@ -1,4 +1,4 @@
-import { CSSProperties, useState } from 'react';
+import React, { CSSProperties, useState } from 'react';
 import {
   Search,
   FileText,

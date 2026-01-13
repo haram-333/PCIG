@@ -79,7 +79,7 @@ export default function TimeTrackingWorkerHours() {
     }
   };
 
-  const selectedEntry = timeEntriesTable.rows.find((r: any) => r.id === selectedEntryId) || timeEntriesTable.rows[0];
+  // const selectedEntry = timeEntriesTable.rows.find((r: any) => r.id === selectedEntryId) || timeEntriesTable.rows[0];
 
   const pageWrapperStyle: CSSProperties = {
     fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",

@@ -2,6 +2,7 @@ import { CSSProperties, useState } from 'react';
 import {
   Search,
   FileText,
+  Clock,
   TrendingUp,
   Settings,
   RefreshCw,

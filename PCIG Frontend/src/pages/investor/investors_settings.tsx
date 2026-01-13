@@ -17,7 +17,7 @@ import {
   Edit,
   Info
 } from 'lucide-react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useIsMobile, useIsTablet } from '../../hooks/useMediaQuery';
 import investorsData from '../../data/investors.json';
 
