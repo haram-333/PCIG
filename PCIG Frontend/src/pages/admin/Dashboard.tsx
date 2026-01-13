@@ -14,7 +14,6 @@ import {
   Plus,
   Filter,
   ArrowUpDown,
-  Eye,
   ArrowRight,
   Circle
 } from 'lucide-react';
@@ -396,7 +395,7 @@ export default function Dashboard() {
 
         {/* Action Items Table - full width */}
         <div style={{ backgroundColor: '#FFFFFF', padding: `clamp(14px, 1.8vw, 20px)`, borderRadius: `clamp(6px, 0.8vw, 8px)`, border: '1px solid #E2E8F0', width: '100%', maxWidth: '100%', boxSizing: 'border-box', overflow: 'hidden', marginBottom: `clamp(12px, 2vh, 24px)` }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: `clamp(16px, 2vh, 20px)`, flexDirection: isMobile ? 'column' : 'row', gap: `clamp(10px, 1.5vw, 12px)`, alignItems: isMobile ? 'flex-start' : 'center' }}>
+              <div style={{ display: 'flex', alignItems: isMobile ? 'flex-start' : 'center', justifyContent: 'space-between', marginBottom: `clamp(16px, 2vh, 20px)`, flexDirection: isMobile ? 'column' : 'row', gap: `clamp(10px, 1.5vw, 12px)` }}>
                 <div>
                   <h2 style={{ fontSize: `clamp(15px, 1.8vw, 18px)`, fontWeight: 600, color: '#0F172A', marginBottom: `clamp(3px, 0.5vh, 4px)` }}>{actionItems.title}</h2>
                   <p style={{ fontSize: `clamp(11px, 1.2vw, 13px)`, color: '#64748B' }}>{actionItems.subtitle}</p>

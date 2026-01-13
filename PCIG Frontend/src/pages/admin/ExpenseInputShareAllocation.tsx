@@ -1,4 +1,4 @@
-import React, { CSSProperties, useState } from 'react';
+import { CSSProperties, useState } from 'react';
 import {
   DollarSign,
   Clock,
@@ -77,7 +77,7 @@ export default function ExpenseInputShareAllocation() {
     }
   };
 
-  const selectedExpense = expensesTable.rows.find((r: any) => r.id === selectedExpenseId) || expensesTable.rows[0];
+  // const selectedExpense = expensesTable.rows.find((r: any) => r.id === selectedExpenseId) || expensesTable.rows[0];
 
   const pageWrapperStyle: CSSProperties = {
     fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
@@ -101,8 +101,8 @@ export default function ExpenseInputShareAllocation() {
   const BulkImportIcon = iconMap[header.actionButtons[0].icon] || Upload;
   const NewExpenseIcon = iconMap[header.actionButtons[1].icon] || Plus;
   const EditIcon = iconMap[detailPanel.expenseInformation.editIcon] || Edit;
-  const DownloadIcon = iconMap[detailPanel.expenseInformation.fields[7].value.icon] || Download;
-  const HomeIcon = iconMap[detailPanel.expenseInformation.fields[0].value.icon] || Home;
+  const DownloadIcon = iconMap[typeof detailPanel.expenseInformation.fields[7].value === 'object' && detailPanel.expenseInformation.fields[7].value?.icon ? detailPanel.expenseInformation.fields[7].value.icon : ''] || Download;
+  const HomeIcon = iconMap[typeof detailPanel.expenseInformation.fields[0].value === 'object' && detailPanel.expenseInformation.fields[0].value?.icon ? detailPanel.expenseInformation.fields[0].value.icon : ''] || Home;
   const CheckIcon = iconMap[detailPanel.actions.approve.icon] || Check;
   const RejectIcon = iconMap[detailPanel.actions.reject.icon] || X;
   const NotifyIcon = iconMap['Bell'] || Bell;

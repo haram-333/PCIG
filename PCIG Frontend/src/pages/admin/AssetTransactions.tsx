@@ -1,7 +1,6 @@
-import React, { CSSProperties, useState } from 'react';
+import { CSSProperties, useState } from 'react';
 import {
   Search,
-  Filter,
   FileText,
   Plus,
   ArrowUpDown,
@@ -12,8 +11,7 @@ import {
   Download,
   MoreHorizontal,
   X,
-  Edit,
-  FileCheck
+  Edit
 } from 'lucide-react';
 import AdminNav from '../../components/admin/AdminNav';
 import { useIsMobile, useIsTablet } from '../../hooks/useMediaQuery';

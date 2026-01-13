@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Building2, Mail, ArrowLeft } from 'lucide-react';
+import { Building2, Mail } from 'lucide-react';
 import { useIsMobile, useIsTablet } from '../../hooks/useMediaQuery';
 
 export default function ForgotPassword() {

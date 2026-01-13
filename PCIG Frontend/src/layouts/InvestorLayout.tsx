@@ -37,7 +37,6 @@ const navItems: NavItemType[] = [
 
 const InvestorLayout: React.FC = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const location = useLocation();
   const isMobile = useIsMobile();
 
   return (

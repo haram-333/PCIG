@@ -1,4 +1,4 @@
-import React, { CSSProperties, useState } from 'react';
+import { CSSProperties, useState } from 'react';
 import {
   Search,
   Filter,
@@ -45,7 +45,7 @@ export default function REOLeased() {
   const [selectedLeaseId, setSelectedLeaseId] = useState<string>(selectedProperty.id);
   const [activeTab, setActiveTab] = useState<string>(selectedProperty.activeTab);
 
-  const currentLease = leases.find(l => l.id === selectedLeaseId) || leases[0];
+  // const currentLease = leases.find(l => l.id === selectedLeaseId) || leases[0];
 
   const pageWrapperStyle: CSSProperties = {
     fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",

@@ -1,13 +1,11 @@
-import React, { CSSProperties, useState } from 'react';
+import { CSSProperties, useState } from 'react';
 import {
   Search,
-  Filter,
   FileText,
   Plus,
   Edit,
   FileDown,
-  Share2,
-  TrendingUp
+  Share2
 } from 'lucide-react';
 import AdminNav from '../../components/admin/AdminNav';
 import { useIsMobile, useIsTablet } from '../../hooks/useMediaQuery';
@@ -41,7 +39,7 @@ export default function FundAdmin() {
   const [selectedFundId, setSelectedFundId] = useState<string>(selectedFund.id);
   const [activeTab, setActiveTab] = useState<string>(selectedFund.activeTab);
 
-  const currentFund = funds.find(f => f.id === selectedFundId) || funds[0];
+  // const currentFund = funds.find(f => f.id === selectedFundId) || funds[0];
   const fundDetails = selectedFund;
 
   const pageWrapperStyle: CSSProperties = {

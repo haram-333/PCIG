@@ -1,4 +1,4 @@
-import React, { CSSProperties, useState } from 'react';
+import { CSSProperties, useState } from 'react';
 import {
   Clock,
   AlertCircle,
@@ -103,7 +103,7 @@ export default function TimeTrackingWorkerHours() {
   const GenerateReportIcon = iconMap[header.actionButtons[0].icon] || FileText;
   const LogTimeIcon = iconMap[header.actionButtons[1].icon] || Plus;
   const VarianceIcon = iconMap[detailPanel.varianceWarning.icon] || AlertTriangle;
-  const StatusIcon = iconMap[selectedEntry.statusIcon] || AlertCircle;
+  // const StatusIcon = iconMap[selectedEntry.statusIcon] || AlertCircle;
   const ApproveIcon = iconMap[detailPanel.actions.approve.icon] || Check;
   const RejectIcon = iconMap[detailPanel.actions.reject.icon] || X;
   const RequestClarificationIcon = iconMap[detailPanel.actions.requestClarification.icon] || MessageCircle;

@@ -1,20 +1,13 @@
-import React, { CSSProperties, useState } from 'react';
+import { CSSProperties, useState } from 'react';
 import {
   Search,
   Filter,
   Download,
   Plus,
   MoreHorizontal,
-  MapPin,
-  Home,
-  Calendar,
   FileText,
   Edit,
   X,
-  CheckCircle2,
-  Clock,
-  DollarSign,
-  Building2,
   Image as ImageIcon,
   ChevronRight,
   Eye

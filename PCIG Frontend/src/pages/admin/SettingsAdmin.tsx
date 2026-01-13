@@ -1,4 +1,4 @@
-import React, { CSSProperties, useRef, useState } from 'react';
+import { CSSProperties, useRef, useState } from 'react';
 import { Edit3, Trash2, ToggleRight } from 'lucide-react';
 import AdminNav from '../../components/admin/AdminNav';
 import adminData from '../../data/admin.json';
@@ -31,7 +31,7 @@ export default function SettingsAdmin() {
   const scrollToSection = (item: string) => {
     setActiveItem(item);
 
-    const refMap: Record<string, React.RefObject<HTMLDivElement>> = {
+    const refMap: Record<string, React.RefObject<HTMLDivElement | null>> = {
       'County/State Config': countyRef,
       'Interest Rates & Models': interestRef,
       'Workflow Configuration': workflowRef,

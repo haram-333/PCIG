@@ -1,16 +1,12 @@
-import React, { CSSProperties, useState } from 'react';
+import { CSSProperties, useState } from 'react';
 import {
   Search,
-  Filter,
   FileText,
   Plus,
   ArrowUpRight,
   ArrowDownRight,
   ArrowUpDown,
   CheckCircle2,
-  Clock,
-  XCircle,
-  Download,
   Check
 } from 'lucide-react';
 import AdminNav from '../../components/admin/AdminNav';
@@ -448,7 +444,7 @@ export default function Payments() {
                   </tr>
                 </thead>
                 <tbody>
-                  {payments.map((payment, idx) => (
+                  {payments.map((payment) => (
                     <tr
                       key={payment.id}
                       style={{

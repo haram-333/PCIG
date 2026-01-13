@@ -1,4 +1,4 @@
-import React, { CSSProperties } from 'react';
+import { CSSProperties } from 'react';
 import { Search, Filter, ChevronDown, MoreHorizontal } from 'lucide-react';
 import AdminNav from '../../components/admin/AdminNav';
 import adminData from '../../data/admin.json';

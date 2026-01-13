@@ -1,17 +1,14 @@
-import React, { CSSProperties, useState } from 'react';
+import { CSSProperties, useState } from 'react';
 import {
   Search,
   FileText,
-  Clock,
   TrendingUp,
   Settings,
   RefreshCw,
   ClipboardList,
   Percent,
   Book,
-  Plus,
-  Calendar,
-  Tag
+  Plus
 } from 'lucide-react';
 import AdminNav from '../../components/admin/AdminNav';
 import { useIsMobile, useIsTablet } from '../../hooks/useMediaQuery';

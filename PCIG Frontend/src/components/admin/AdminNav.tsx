@@ -140,9 +140,9 @@ export default function AdminNav() {
 
   // Helper function to create dropdown nav item
   const createDropdownItem = (
-    hoverState: boolean,
+    _hoverState: boolean,
     setHoverState: (val: boolean) => void,
-    positionState: { top: number; left: number },
+    _positionState: { top: number; left: number },
     setPositionState: (pos: { top: number; left: number }) => void,
     subNavItems: Array<{ path: string; label: string; isActive?: boolean }>
   ) => {

@@ -18,7 +18,6 @@ import {
   CreditCard,
   Wrench,
   Eye,
-  XCircle
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useIsMobile, useIsTablet } from '../../hooks/useMediaQuery';

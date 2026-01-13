@@ -25,7 +25,7 @@ export default function InvestorsSettings() {
   const isMobile = useIsMobile();
   const isTablet = useIsTablet();
   const isMobileOrTablet = isMobile || isTablet;
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<string>(investorsData.settings.defaultSection);
   
@@ -33,7 +33,7 @@ export default function InvestorsSettings() {
   const [profileData, setProfileData] = useState(investorsData.settings.profile);
   const [securityData, setSecurityData] = useState(investorsData.settings.security);
   const [notificationData, setNotificationData] = useState(investorsData.settings.notifications);
-  const [bankAccounts, setBankAccounts] = useState(investorsData.settings.bankAccounts);
+  const [bankAccounts] = useState(investorsData.settings.bankAccounts);
   const [privacyData, setPrivacyData] = useState(investorsData.settings.privacy);
 
   const navItems = [

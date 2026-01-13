@@ -1,4 +1,3 @@
-import React from 'react';
 import { 
   ArrowRight,
   ChevronRight,
@@ -9,7 +8,6 @@ import {
   Filter,
   ArrowUpDown
 } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { useIsMobile, useIsTablet } from '../../hooks/useMediaQuery';
 import AdminNav from '../../components/admin/AdminNav';
 import adminData from '../../data/admin.json';
@@ -251,7 +249,7 @@ export default function PropertiesWorkflowHub() {
               scrollbarWidth: isMobile ? 'thin' : 'auto',
             }}
           >
-            {lifecycleWorkflow.stages.map((stage, idx) => (
+            {lifecycleWorkflow.stages.map((stage) => (
               <div
                 key={stage.label}
                 style={{
